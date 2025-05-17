@@ -1,8 +1,16 @@
 import Link from "next/link";
 import { ImageCard } from "../atoms/ImageCard";
 
+type Album = {
+  id: string;
+  name: string;
+  images: {
+    url: string;
+  }[];
+};
+
 type AlbumListProps = {
-  albums: any[];
+  albums: Album[];
 };
 
 export const AlbumList = ({ albums }: AlbumListProps) => (
