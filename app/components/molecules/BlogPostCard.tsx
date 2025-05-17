@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Post } from "../../types";
 
 type BlogPostCardProps = {
@@ -8,7 +7,7 @@ type BlogPostCardProps = {
 
 export function BlogPostCard({ post }: BlogPostCardProps) {
   return (
-    <article className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+    <article className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow hover:text-purple-600">
       <Image
         src={post.imageUrl}
         alt={post.title}
@@ -19,9 +18,9 @@ export function BlogPostCard({ post }: BlogPostCardProps) {
       <div className="p-6">
         <span className="text-sm text-purple-600">{post.category}</span>
         <h3 className="text-xl font-bold mt-2 mb-3">
-          <Link href={`/posts/${post.slug}`} className="hover:text-purple-600">
+          <div>
             {post.title}
-          </Link>
+          </div>
         </h3>
         <p className="text-gray-600 mb-4">{post.excerpt}</p>
         <div className="flex items-center text-sm text-gray-500">

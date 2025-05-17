@@ -20,7 +20,25 @@ inline {
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+  font-family: "Geist Sans";
+  src: local("Geist Sans"), url("/fonts/Geist-Sans.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: local("Geist Mono"), url("/fonts/Geist-Mono.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
