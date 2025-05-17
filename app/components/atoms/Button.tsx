@@ -11,7 +11,7 @@ export const Button = ({
   className = "",
   href,
 }: ButtonProps) => {
-  const baseStyles = `px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors ${className}`;
+  const baseStyles = `px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 transition-colors ${className}`;
 
   return href ? (
     <a

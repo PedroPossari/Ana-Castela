@@ -10,7 +10,7 @@ export default async function AlbumsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <main>
+      <main className="bg-gray-100">
         <HeroSection />
         <MainContent>
           <h1 className="text-2xl font-bold mb-4 text-black">

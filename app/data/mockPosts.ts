@@ -14,6 +14,7 @@ export const mockPosts: Post[] = [
     category: "Melhor Álbum Sertanejo 2024",
     date: "17 de Maio, 2024",
     readTime: 4,
+    url: "https://www.cnnbrasil.com.br/entretenimento/grammy-latino-ana-castela-chora-ao-receber-premio-2-dias-antes-de-fazer-21-anos/#:~:text=A%20cantora%20Ana%20Castela%2C%2020,foi%20entregue%20por%20Gloria%20Groove.",
   },
   {
     id: "2",
@@ -27,6 +28,7 @@ export const mockPosts: Post[] = [
     category: "Revelação 2022",
     date: "25 de Outubro, 2022",
     readTime: 3,
+    url: "https://gshow.globo.com/cultura-pop/noticia/premio-multishow-2022-veja-a-lista-completa-dos-vencedores-da-premiacao.ghtml",
   },
   {
     id: "3",
@@ -41,5 +43,6 @@ export const mockPosts: Post[] = [
     category: "Agenda de Shows",
     date: "10 de Junho, 2024",
     readTime: 4,
+    url: "https://g1.globo.com/sp/ribeirao-preto-franca/festa-do-peao-de-barretos/2024/noticia/2024/08/18/um-ano-apos-choro-na-estreia-ana-castela-volta-ao-palco-principal-de-barretos-e-encanta-arena-lotada-de-adultos-e-criancas.ghtml",
   },
 ];

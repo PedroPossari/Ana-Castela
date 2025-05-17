@@ -9,12 +9,17 @@ export function PostGrid() {
       <SectionTitle>A Trajetória de Sucesso nos Prêmios</SectionTitle>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
         {mockPosts.map((post) => (
-          <Link 
-            key={post.id} 
-            href={`/posts/${post.id}`}
-            className="block group" // Adicionei 'group' para estilização hover
+          <Link
+            key={post.id}
+            href={`${post.url}`}
+            className="block group"
           >
-            <div className="transition-all duration-300 ease-in-out group-hover:scale-[1.02] group-hover:shadow-lg">
+            <div
+              className="transition-all duration-300 ease-in-out 
+                group-hover:scale-[1.02] group-hover:shadow-lg 
+                active:scale-[1.02] active:shadow-lg
+                touch-none"
+            >
               <BlogPostCard post={post} />
             </div>
           </Link>

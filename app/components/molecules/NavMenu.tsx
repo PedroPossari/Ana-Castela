@@ -7,7 +7,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 const navItems = [
   { name: "Início", path: "/" },
   { name: "Discografia", path: "/pages/discrografia" },
-  { name: "Musicas-populares", path: "/blog" },
+  { name: "Musicas-populares", path: "/pages/musicas-populares" },
   { name: "Curiosidades", path: "/about" },
   { name: "Contato", path: "/contact" },
 ];

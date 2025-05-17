@@ -8,6 +8,7 @@ export type Post = {
     category: string;
     date: string;
     readTime: number;
+    url: string;
   };
   
   export interface SpotifyTrack {
