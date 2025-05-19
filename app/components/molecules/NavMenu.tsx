@@ -8,8 +8,8 @@ const navItems = [
   { name: "Início", path: "/" },
   { name: "Discografia", path: "/pages/discrografia" },
   { name: "Musicas-populares", path: "/pages/musicas-populares" },
-  { name: "Curiosidades", path: "/about" },
-  { name: "Contato", path: "/contact" },
+  { name: "Curiosidades", path: "/pages/curiosidades" },
+  { name: "Contato", path: "/pages/contato" },
 ];
 
 export function NavMenu() {
@@ -17,7 +17,6 @@ export function NavMenu() {
 
   return (
     <>
-      {/* Mobile menu button */}
       <button
         className="md:hidden p-2 text-gray-700 hover:text-purple-600"
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -25,7 +24,6 @@ export function NavMenu() {
         {mobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
       </button>
 
-      {/* Desktop menu (hidden on mobile) */}
       <nav className="hidden md:block">
         <ul className="flex space-x-8">
           {navItems.map((item) => (
@@ -41,7 +39,6 @@ export function NavMenu() {
         </ul>
       </nav>
 
-      {/* Mobile menu (shown when toggled) */}
       {mobileMenuOpen && (
         <nav className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg z-50">
           <ul className="flex flex-col py-4">

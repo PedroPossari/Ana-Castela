@@ -1,9 +1,4 @@
-interface ButtonProps {
-  children: React.ReactNode;
-  onClick?: () => void;
-  className?: string;
-  href?: string;
-}
+import { ButtonProps } from "../../types";
 
 export const Button = ({
   children,

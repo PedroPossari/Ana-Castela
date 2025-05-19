@@ -1,17 +1,7 @@
 import Link from "next/link";
 import { ImageCard } from "../atoms/ImageCard";
 
-type Album = {
-  id: string;
-  name: string;
-  images: {
-    url: string;
-  }[];
-};
-
-type AlbumListProps = {
-  albums: Album[];
-};
+import { AlbumListProps } from "../../types";
 
 export const AlbumList = ({ albums }: AlbumListProps) => (
   <div className="flex flex-wrap justify-center items-center gap-6 w-full text-black">

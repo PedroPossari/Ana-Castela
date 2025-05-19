@@ -1,9 +1,5 @@
 import Image from "next/image";
-import { Post } from "../../types";
-
-type BlogPostCardProps = {
-  post: Post;
-};
+import { BlogPostCardProps } from "../../types";
 
 export function BlogPostCard({ post }: BlogPostCardProps) {
   return (

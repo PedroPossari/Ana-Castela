@@ -1,8 +1,4 @@
-interface ImageProps {
-  src: string;
-  alt: string;
-  className?: string;
-}
+import { ImageProps } from "../../types";
 
 export const Image = ({ src, alt, className = "" }: ImageProps) => (
   <img

@@ -7,9 +7,9 @@ export function Logo() {
       <Image
         src="/images/logo.png"
         alt="Ana Castelo"
-        width={150} 
-        height={150} 
-        className="object-contain" 
+        width={150}
+        height={150}
+        className="object-contain"
       />
     </Link>
   );

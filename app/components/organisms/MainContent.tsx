@@ -1,8 +1,4 @@
-import { ReactNode } from "react";
-
-type MainContentProps = {
-  children: ReactNode;
-};
+import { MainContentProps } from "../../types";
 
 export function MainContent({ children }: MainContentProps) {
   return (
