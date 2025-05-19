@@ -3,6 +3,7 @@ import { HeroSection } from "@/app/components/organisms/HeroSection";
 import { MainContent } from "@/app/components/organisms/MainContent";
 import { getAnaCastelaPopularTracks } from "../../hooks/getPopularTracks";
 import { TrackCard } from "../../components/molecules/TrackCard";
+import { Footer } from "@/app/components/organisms/Footer";
 
 export default async function MusicasPopulares() {
   const tracks = await getAnaCastelaPopularTracks(3);
@@ -28,6 +29,7 @@ export default async function MusicasPopulares() {
           </div>
         </MainContent>
       </main>
+      <Footer />
     </>
   );
 }

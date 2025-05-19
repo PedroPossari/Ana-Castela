@@ -1,4 +1,5 @@
 "use client";
+import { Footer } from '@/app/components/organisms/Footer';
 import { ContactForm } from '../../components/organisms/ContactForm'
 import { Header } from "@/app/components/organisms/Header";
 import { HeroSection } from "@/app/components/organisms/HeroSection";
@@ -35,6 +36,7 @@ export default function ContactPage() {
           </div>
         </MainContent>
       </main>
+      <Footer />
     </>
   );
 }

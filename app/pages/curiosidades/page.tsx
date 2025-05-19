@@ -4,6 +4,7 @@ import { curiosities } from "../../data/curiosidadesData";
 import { Header } from "@/app/components/organisms/Header";
 import { HeroSection } from "@/app/components/organisms/HeroSection";
 import { MainContent } from "@/app/components/organisms/MainContent";
+import { Footer } from "@/app/components/organisms/Footer";
 
 
 export default function Curiosidades() {
@@ -32,6 +33,7 @@ export default function Curiosidades() {
     </PostLayout>
     </MainContent>
     </main>
+    <Footer />
     </>
   );
 }
