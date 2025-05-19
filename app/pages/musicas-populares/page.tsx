@@ -1,18 +1,13 @@
-import { Header } from "@/app/components/organisms/Header";
-import { HeroSection } from "@/app/components/organisms/HeroSection";
 import { MainContent } from "@/app/components/organisms/MainContent";
 import { getAnaCastelaPopularTracks } from "../../hooks/getPopularTracks";
 import { TrackCard } from "../../components/molecules/TrackCard";
-import { Footer } from "@/app/components/organisms/Footer";
 
 export default async function MusicasPopulares() {
   const tracks = await getAnaCastelaPopularTracks(3);
 
   return (
     <>
-      <Header />
       <main className="bg-gray-100">
-        <HeroSection />
         <MainContent>
           <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
@@ -29,7 +24,6 @@ export default async function MusicasPopulares() {
           </div>
         </MainContent>
       </main>
-      <Footer />
     </>
   );
 }
