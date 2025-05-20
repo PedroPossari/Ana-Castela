@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "./components/organisms/Header";
 import { Footer } from "./components/organisms/Footer";
 import { HeroSection } from "./components/organisms/HeroSection";
+import { FavoritesProvider } from "./context/FavoritesContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,14 +28,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <FavoritesProvider>
       <Header />
       <HeroSection />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        
         {children}
+        
       </body>
       <Footer />
+      </FavoritesProvider>
     </html>
   );
 }

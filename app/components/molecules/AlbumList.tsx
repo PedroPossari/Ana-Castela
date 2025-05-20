@@ -1,27 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { AlbumListProps } from "../../types";
-
-const FAVORITES_KEY = "favoritedAlbums";
+import { useFavorites } from "../../context/FavoritesContext";
 
 export const AlbumList = ({ albums }: AlbumListProps) => {
-  const [favorites, setFavorites] = useState<string[]>([]);
-
-  useEffect(() => {
-    const storedFavorites = localStorage.getItem(FAVORITES_KEY);
-    if (storedFavorites) {
-      setFavorites(JSON.parse(storedFavorites));
-    }
-  }, []);
-
-  const toggleFavorite = (id: string) => {
-    const updated = favorites.includes(id)
-      ? favorites.filter((favId) => favId !== id)
-      : [...favorites, id];
-    setFavorites(updated);
-    localStorage.setItem(FAVORITES_KEY, JSON.stringify(updated));
-  };
+  const { favorites, toggleFavorite } = useFavorites();
 
   const share = async (url: string) => {
     try {
@@ -44,20 +27,9 @@ export const AlbumList = ({ albums }: AlbumListProps) => {
         const isFavorited = favorites.includes(album.id);
 
         return (
-          <div
-            key={album.id}
-            className="relative bg-white-900 rounded-2xl overflow-hidden shadow-lg transition-transform transform hover:scale-105 group"
-          >
-            <Link
-              href={albumUrl}
-              target="_blank"
-              className="no-underline block"
-            >
-              <img
-                src={album.images[0]?.url}
-                alt={album.name}
-                className="w-full h-48 object-cover"
-              />
+          <div key={album.id} className="relative bg-white-900 rounded-2xl overflow-hidden shadow-lg transition-transform transform hover:scale-105 group">
+            <Link href={albumUrl} target="_blank" className="no-underline block">
+              <img src={album.images[0]?.url} alt={album.name} className="w-full h-48 object-cover" />
               <div className="p-4">
                 <h3 className="font-semibold text-black text-base group-hover:text-purple-500 transition-colors duration-200">
                   {album.name}
@@ -71,14 +43,8 @@ export const AlbumList = ({ albums }: AlbumListProps) => {
                   e.preventDefault();
                   toggleFavorite(album.id);
                 }}
-                aria-label={
-                  isFavorited
-                    ? "Remover dos favoritos"
-                    : "Adicionar aos favoritos"
-                }
-                className={`w-9 h-9 flex items-center justify-center rounded-full bg-zinc-800 bg-opacity-80 hover:bg-purple-600 transition-colors ${
-                  isFavorited ? "text-purple-400" : "text-black"
-                }`}
+                aria-label={isFavorited ? "Remover dos favoritos" : "Adicionar aos favoritos"}
+                className={`w-9 h-9 flex items-center justify-center rounded-full bg-zinc-800 bg-opacity-80 hover:bg-purple-600 transition-colors ${isFavorited ? "text-purple-400" : "text-black"}`}
               >
                 {isFavorited ? "★" : "☆"}
               </button>
