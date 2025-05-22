@@ -6,6 +6,8 @@ import { Footer } from "./components/organisms/Footer";
 import { HeroSection } from "./components/organisms/HeroSection";
 import { FavoritesProvider } from "./context/FavoritesContext";
 
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

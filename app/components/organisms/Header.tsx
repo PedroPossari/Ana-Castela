@@ -1,3 +1,4 @@
+"use client"; 
 import { SocialIcons } from "../molecules/SocialIcons";
 import { NavMenu } from "../molecules/NavMenu";
 import { Logo } from "../atoms/Logo";

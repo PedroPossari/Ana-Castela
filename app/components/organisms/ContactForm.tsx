@@ -1,9 +1,14 @@
+"use client";
+
 import { useState } from "react";
 import { FormField } from "../molecules/FormField";
 import { Button } from "../atoms/FormButton";
 import { Text } from "../atoms/Text";
+import { useTranslation } from "react-i18next";
 
 export const ContactForm = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,13 +28,14 @@ export const ContactForm = () => {
   const validate = () => {
     const newErrors: Record<string, string> = {};
 
-    if (!formData.name.trim()) newErrors.name = "Nome é obrigatório";
+    if (!formData.name.trim()) newErrors.name = t("contactForm.errors.name");
     if (!formData.email.trim()) {
-      newErrors.email = "Email é obrigatório";
+      newErrors.email = t("contactForm.errors.email.required");
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Email inválido";
+      newErrors.email = t("contactForm.errors.email.invalid");
     }
-    if (!formData.message.trim()) newErrors.message = "Mensagem é obrigatória";
+    if (!formData.message.trim())
+      newErrors.message = t("contactForm.errors.message");
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -37,7 +43,6 @@ export const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
     if (!validate()) return;
 
     setIsSubmitting(true);
@@ -57,7 +62,7 @@ export const ContactForm = () => {
     return (
       <div className="p-6 bg-green-50 rounded-md">
         <Text className="text-green-800">
-          Obrigado pelo seu contato! Retornaremos em breve.
+          {t("contactForm.successMessage")}
         </Text>
       </div>
     );
@@ -65,10 +70,10 @@ export const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-      <Text className="mb-6 text-center">Entre em contato conosco</Text>
+      <Text className="mb-6 text-center">{t("contactForm.title")}</Text>
 
       <FormField
-        label="Nome"
+        label={t("contactForm.fields.name")}
         id="name"
         name="name"
         value={formData.name}
@@ -78,7 +83,7 @@ export const ContactForm = () => {
       />
 
       <FormField
-        label="Email"
+        label={t("contactForm.fields.email")}
         id="email"
         type="email"
         name="email"
@@ -91,7 +96,8 @@ export const ContactForm = () => {
       <div className="mb-4">
         <label htmlFor="message" className="block mb-1">
           <Text>
-            Mensagem <span className="text-red-500">*</span>
+            {t("contactForm.fields.message")}{" "}
+            <span className="text-red-500">*</span>
           </Text>
         </label>
         <textarea
@@ -113,7 +119,9 @@ export const ContactForm = () => {
           disabled={isSubmitting}
           className="w-full md:w-auto"
         >
-          {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
+          {isSubmitting
+            ? t("contactForm.submitting")
+            : t("contactForm.submitButton")}
         </Button>
       </div>
     </form>

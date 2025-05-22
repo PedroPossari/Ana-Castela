@@ -1,6 +1,8 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useTranslation } from 'react-i18next';
+
 import { userFormSchema, UserFormData } from '../../hooks/schema';
 import { FormGroup } from '../molecules/FormGroup';
 import { Input, Textarea, Checkbox, Radio } from '../atoms/FormControls';
@@ -12,6 +14,8 @@ interface UserFormProps {
 }
 
 export const UserForm: React.FC<UserFormProps> = ({ onSubmit, defaultValues }) => {
+  const { t } = useTranslation();
+
   const {
     register,
     handleSubmit,
@@ -23,76 +27,76 @@ export const UserForm: React.FC<UserFormProps> = ({ onSubmit, defaultValues }) =
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto p-4 text-gray-900">
-      <h1 className="text-2xl font-bold mb-6">Cadastro de Usuário</h1>
-      
-      <FormGroup label="Nome completo" htmlFor="name" error={errors.name?.message} required>
+      <h1 className="text-2xl font-bold mb-6">{t('form.title')}</h1>
+
+      <FormGroup label={t('form.name')} htmlFor="name" error={errors.name?.message} required>
         <Input
           id="name"
           type="text"
-          placeholder="Digite seu nome"
+          placeholder={t('form.name')}
           registration={register('name')}
           error={errors.name?.message}
         />
       </FormGroup>
 
-      <FormGroup label="E-mail" htmlFor="email" error={errors.email?.message} required>
+      <FormGroup label={t('form.email')} htmlFor="email" error={errors.email?.message} required>
         <Input
           id="email"
           type="email"
-          placeholder="Digite seu e-mail"
+          placeholder={t('form.email')}
           registration={register('email')}
           error={errors.email?.message}
         />
       </FormGroup>
 
-      <FormGroup label="Senha" htmlFor="password" error={errors.password?.message} required>
+      <FormGroup label={t('form.password')} htmlFor="password" error={errors.password?.message} required>
         <Input
           id="password"
           type="password"
-          placeholder="Digite sua senha"
+          placeholder={t('form.password')}
           registration={register('password')}
           error={errors.password?.message}
         />
       </FormGroup>
 
-      <FormGroup label="Confirmar senha" htmlFor="confirmPassword" error={errors.confirmPassword?.message} required>
+      <FormGroup label={t('form.confirmPassword')} htmlFor="confirmPassword" error={errors.confirmPassword?.message} required>
         <Input
           id="confirmPassword"
           type="password"
-          placeholder="Confirme sua senha"
+          placeholder={t('form.confirmPassword')}
           registration={register('confirmPassword')}
           error={errors.confirmPassword?.message}
         />
       </FormGroup>
 
-      <FormGroup label="Bio (Opcional)" htmlFor="bio" error={errors.bio?.message}>
+      <FormGroup label={t('form.bio')} htmlFor="bio" error={errors.bio?.message}>
         <Textarea
           id="bio"
-          placeholder="Fale um pouco sobre você"
+          placeholder={t('form.bio')}
           rows={3}
           registration={register('bio')}
           error={errors.bio?.message}
         />
       </FormGroup>
 
-      <FormGroup label="Gênero" error={errors.gender?.message} required>
+      <FormGroup label={t('form.gender')} error={errors.gender?.message} required>
         <div className="space-y-2">
           <Radio
             id="male"
             value="male"
-            label="Masculino"
+            label={t('form.genderOptions.male')}
             registration={register('gender')}
           />
           <Radio
             id="female"
             value="female"
-            label="Feminino"
+            label={t('form.genderOptions.female')}
             registration={register('gender')}
           />
           <Radio
             id="other"
             value="other"
-            label="Outro"
+            label={t('form.genderOptions.other')}
             registration={register('gender')}
           />
         </div>
@@ -101,7 +105,7 @@ export const UserForm: React.FC<UserFormProps> = ({ onSubmit, defaultValues }) =
       <FormGroup error={errors.acceptTerms?.message}>
         <Checkbox
           id="acceptTerms"
-          label="Aceito os termos e condições"
+          label={t('form.acceptTerms')}
           registration={register('acceptTerms')}
         />
       </FormGroup>
@@ -109,17 +113,17 @@ export const UserForm: React.FC<UserFormProps> = ({ onSubmit, defaultValues }) =
       <FormGroup>
         <Checkbox
           id="notifications"
-          label="Desejo receber notificações por e-mail"
+          label={t('form.notifications')}
           registration={register('notifications')}
         />
       </FormGroup>
 
       <div className="flex justify-end space-x-3 mt-6">
         <Button type="button" variant="secondary">
-          Cancelar
+          {t('form.cancel')}
         </Button>
         <Button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? 'Enviando...' : 'Cadastrar'}
+          {isSubmitting ? t('form.submitting') : t('form.submit')}
         </Button>
       </div>
     </form>

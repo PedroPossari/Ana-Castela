@@ -1,0 +1,177 @@
+{
+    "form": {
+      "title": "Registro de Usuario",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "bio": "Biografía (Opcional)",
+      "gender": "Género",
+      "genderOptions": {
+        "male": "Masculino",
+        "female": "Femenino",
+        "other": "Otro"
+      },
+      "acceptTerms": "Acepto los términos y condiciones",
+      "notifications": "Deseo recibir notificaciones por correo electrónico",
+      "cancel": "Cancelar",
+      "submit": "Registrar",
+      "submitting": "Enviando..."
+    },
+  
+    "nav": {
+      "home": "Inicio",
+      "discography": "Discografía",
+      "popularSongs": "Canciones Populares",
+      "curiosities": "Curiosidades",
+      "contact": "Contacto"
+    },
+  
+    "anaCastela": {
+      "listenOnSpotify": "Escuchar en Spotify",
+      "ariaLabel": "Escuchar a Ana Castela en Spotify"
+    },
+  
+    "track": {
+      "album": "Álbum",
+      "duration": "Duración",
+      "popularity": "Popularidad",
+      "listenOnSpotify": "Escuchar en Spotify"
+    },
+  
+    "footer": {
+      "contact": "Contacto"
+    },
+  
+    "hero": {
+      "title": "Ana Castela",
+      "subtitle": "Bienvenido a mi mundo de música y arte"
+    },
+  
+    "postGrid": {
+      "title": "La trayectoria de éxito en los premios"
+    },
+  
+    "contactForm": {
+      "title": "Contáctanos",
+      "fields": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "message": "Mensaje"
+      },
+      "submitButton": "Enviar Mensaje",
+      "submitting": "Enviando...",
+      "successMessage": "¡Gracias por contactarnos! Te responderemos pronto.",
+      "errors": {
+        "name": "El nombre es obligatorio",
+        "email": {
+          "required": "El correo electrónico es obligatorio",
+          "invalid": "Correo electrónico inválido"
+        },
+        "message": "El mensaje es obligatorio"
+      }
+    },
+  
+    "contactPage": {
+      "title": "Contacto | Mi Blog",
+      "description": "Contáctanos",
+      "successAlert": "¡Registro exitoso!",
+      "otherContacts": "Otras formas de contacto",
+      "emailLabel": "Correo electrónico:",
+      "phoneLabel": "Teléfono:"
+    },
+  
+    "albumsPage": {
+      "title": "Álbumes de Ana Castela"
+    },
+  
+    "popularTracks": {
+      "title": "Top 3 canciones más populares"
+    },
+  
+    "curiosidades": {
+      "title": "6 Curiosidades sobre Ana Castela",
+      "description": "Datos interesantes sobre la vida y carrera de la cantante",
+      "items": [
+        {
+          "title": "Origen Rural",
+          "content": "Ana Castela creció en una granja en el interior de São Paulo, donde tuvo contacto temprano con la vida rural, lo que influyó fuertemente en su estilo musical y su identidad como artista.",
+          "imageSrc": "/images/Ana-Castela-fazenda.jpg",
+          "imageAlt": "Ana en la granja"
+        },
+        {
+          "title": "Éxito con 'Pipoco'",
+          "content": "La canción 'Pipoco', en colaboración con Melody y DJ Chris no Beat, fue un punto de inflexión en la carrera de Ana Castela, alcanzando millones de vistas y convirtiéndose en uno de los hits virales de Brasil en 2022.",
+          "imageSrc": "/images/Musica-Pipoco.jpg",
+          "imageAlt": "Portada del sencillo Pipoco"
+        },
+        {
+          "title": "Reina del AgroPop",
+          "content": "Ana Castela es conocida como la 'Boiadeira' y una de las principales representantes del género AgroPop, que mezcla sertanejo con elementos pop y electrónicos, conquistando un nuevo público joven.",
+          "imageSrc": "/images/Ana-Castela-rosto.png",
+          "imageAlt": "Ana Castela vestida de vaquera"
+        },
+        {
+          "title": "Conquistó a la juventud brasileña",
+          "content": "Gran parte del público de Ana Castela está compuesto por adolescentes, que se identifican con su autenticidad, simpatía y fuerte presencia en las redes sociales, donde comparte su día a día con humor.",
+          "imageSrc": "/images/Ana-fans.png",
+          "imageAlt": "Ana tomando una selfie con fans"
+        },
+        {
+          "title": "Ganadora de premios",
+          "content": "A pesar de su corta carrera, Ana Castela ya ha ganado importantes premios de la música brasileña, como los TikTok Awards y el Premio Multishow, consolidándose como una gran revelación.",
+          "imageSrc": "/images/Ana-Caste-premiação.png",
+          "imageAlt": "Ana Castela sosteniendo un trofeo"
+        },
+        {
+          "title": "Colaboraciones especiales",
+          "content": "Ana Castela ha colaborado con varios artistas renombrados como Luan Pereira, Simone Mendes y Gustavo Mioto, mostrando su versatilidad y fuerza en la escena musical actual.",
+          "imageSrc": "/images/Ana-Gustavo.png",
+          "imageAlt": "Ana Castela en el escenario con otros artistas"
+        }
+      ]
+    },
+  
+    "postGrid2": {
+      "title": "Últimos posts",
+      "posts": [
+        {
+          "id": "1",
+          "title": "Ana Castela gana Mejor Álbum Sertanejo 2024 con \"Boiadeira Internacional\"",
+          "slug": "ana-castela-gana-mejor-album-sertanejo-2024",
+          "excerpt": "\"Boiadeira Internacional\" coronó a Ana Castela con premios en el Premio de la Música Brasileña y Latin Grammy.",
+          "content": "Ana Castela ganó el título de Mejor Álbum Sertanejo en 2024 con su trabajo \"Boiadeira Internacional (Ao Vivo)\", marcando su debut en vivo con gran éxito. El álbum, lanzado en febrero de 2024 por AgroPlay, fue grabado durante el Fespop, uno de los mayores festivales en la triple frontera (Brasil, Argentina y Paraguay), reuniendo a más de 70,000 personas. Con grandes nombres como Simone Mendes, Matheus & Kauan, Gustavo Mioto, Alok, Hungria Hip Hop y Luan Pereira, el álbum se destacó comercial y críticamente, ganando el Premio de la Música Brasileña en la categoría Lanzamiento Sertanejo y el Latin Grammy a Mejor Álbum Sertanejo.",
+          "imageUrl": "/images/Boiadeira.png",
+          "category": "Mejor Álbum Sertanejo 2024",
+          "date": "17 de mayo de 2024",
+          "readTime": 4,
+          "url": "https://www.cnnbrasil.com.br/entretenimento/grammy-latino-ana-castela-chora-ao-receber-premio-2-dias-antes-de-fazer-21-anos/#:~:text=A%20cantora%20Ana%20Castela%2C%2020,foi%20entregue%20por%20Gloria%20Groove."
+        },
+        {
+          "id": "2",
+          "title": "Ana Castela coronada Revelación del Año en Premios Multishow 2022",
+          "slug": "ana-castela-revelacion-ano-multishow-2022",
+          "excerpt": "La cantante Ana Castela ganó Revelación del Año en Premios Multishow 2022, consolidando su lugar en la escena sertanejo.",
+          "content": "En los Premios Multishow de la Música Brasileña 2022, Ana Castela se llevó el trofeo a **Revelación del Año**, superando a grandes nombres como Bala Desejo, Jovem Dionísio, Mari Fernandez, Nattanzinho, Rachel Reis, Tasha & Tracie y Urias. Esta victoria marcó un momento decisivo en su carrera, reconociendo su talento y el impacto de sus canciones en el género sertanejo. Con éxitos como \"Pipoco\" y una enérgica presencia en el escenario, Ana Castela demostró que llegó para quedarse, conquistando tanto a fans como a críticos. Su meteórico ascenso en la música brasileña confirmó lo que sus seguidores ya sabían: fue la gran revelación del año.",
+          "imageUrl": "/images/MultShowPremio.png",
+          "category": "Revelación 2022",
+          "date": "25 de octubre de 2022",
+          "readTime": 3,
+          "url": "https://gshow.globo.com/cultura-pop/noticia/premio-multishow-2022-veja-a-lista-completa-dos-vencedores-da-premiacao.ghtml"
+        },
+        {
+          "id": "3",
+          "title": "Ana Castela arrasa en gira nacional con conciertos agotados y actuaciones históricas",
+          "slug": "ana-castela-gira-nacional-2024",
+          "excerpt": "Ana Castela está de gira por Brasil, llevando el sertanejo universitario a nuevas alturas y agotando entradas en muchas ciudades.",
+          "content": "Ana Castela vive un momento único en su carrera con su reciente gira, que la está llevando a los principales escenarios de Brasil. Tras el éxito del álbum \"Boiadeira Internacional\" y premios como el Latin Grammy y Multishow, la cantante emprendió una serie de conciertos que se han convertido en eventos imperdibles para los fans del sertanejo. Con producciones grandiosas, coreografías destacadas y apariciones especiales de artistas como Gustavo Mioto y Luan Pereira, Ana Castela ha emocionado a las multitudes. Ciudades como São Paulo, Río de Janeiro, Curitiba y Goiânia agotaron las entradas semanas antes de los eventos, demostrando el fenómeno que se ha convertido. La gira también incluyó actuaciones en festivales importantes como \"Festeja\" y \"AgroPlay Music\", consolidándola como una de las mayores estrellas del género actualmente.",
+          "imageUrl": "/images/Turne.png",
+          "category": "Calendario de conciertos",
+          "date": "10 de junio de 2024",
+          "readTime": 4,
+          "url": "https://g1.globo.com/sp/ribeirao-preto-franca/festa-do-peao-de-barretos/2024/noticia/2024/08/18/um-ano-apos-choro-na-estreia-ana-castela-volta-ao-palco-principal-de-barretos-e-encanta-arena-lotada-de-adultos-e-criancas.ghtml"
+        }
+      ]
+    }
+  }
+  

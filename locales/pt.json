@@ -1,0 +1,169 @@
+{
+  "form": {
+    "title": "Cadastro de Usuário",
+    "name": "Nome completo",
+    "email": "E-mail",
+    "password": "Senha",
+    "confirmPassword": "Confirmar senha",
+    "bio": "Bio (Opcional)",
+    "gender": "Gênero",
+    "genderOptions": {
+      "male": "Masculino",
+      "female": "Feminino",
+      "other": "Outro"
+    },
+    "acceptTerms": "Aceito os termos e condições",
+    "notifications": "Desejo receber notificações por e-mail",
+    "cancel": "Cancelar",
+    "submit": "Cadastrar",
+    "submitting": "Enviando..."
+  },
+
+  "nav": {
+    "home": "Início",
+    "discography": "Discografia",
+    "popularSongs": "Músicas Populares",
+    "curiosities": "Curiosidades",
+    "contact": "Contato"
+  },
+
+  "anaCastela": {
+    "listenOnSpotify": "Ouça no Spotify",
+    "ariaLabel": "Ouça Ana Castela no Spotify"
+  },
+
+  "track": {
+    "album": "Álbum",
+    "duration": "Duração",
+    "popularity": "Popularidade",
+    "listenOnSpotify": "Ouvir no Spotify"
+  },
+
+  "footer": {
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Ana Castela",
+    "subtitle": "Bem-vindo ao meu mundo de música e arte"
+  },
+  "postGrid": {
+    "title": "A Trajetória de Sucesso nos Prêmios"
+  },
+  "contactForm": {
+    "title": "Entre em contato conosco",
+    "fields": {
+      "name": "Nome",
+      "email": "Email",
+      "message": "Mensagem"
+    },
+    "submitButton": "Enviar Mensagem",
+    "submitting": "Enviando...",
+    "successMessage": "Obrigado pelo seu contato! Retornaremos em breve.",
+    "errors": {
+      "name": "Nome é obrigatório",
+      "email": {
+        "required": "Email é obrigatório",
+        "invalid": "Email inválido"
+      },
+      "message": "Mensagem é obrigatória"
+    }
+  },
+  "contactPage": {
+    "title": "Contato | Meu Blog",
+    "description": "Entre em contato conosco",
+    "successAlert": "Cadastro realizado com sucesso!",
+    "otherContacts": "Outras formas de contato",
+    "emailLabel": "Email:",
+    "phoneLabel": "Telefone:"
+  },
+  "albumsPage": {
+    "title": "Álbuns da Ana Castela"
+  },
+  "popularTracks": {
+    "title": "Top 3 musicas mais populares"
+  },
+
+  "curiosidades": {
+    "title": "6 Curiosidades sobre Ana Castela",
+    "description": "Fatos interessantes sobre a vida e carreira da cantora",
+    "items": [
+      {
+        "title": "Origem Rural",
+        "content": "Ana Castela cresceu em uma fazenda no interior de São Paulo, onde teve contato desde cedo com a vida no campo, o que influenciou fortemente seu estilo musical e sua identidade como artista.",
+        "imageSrc": "/images/Ana-Castela-fazenda.jpg",
+        "imageAlt": "Ana na fazenda"
+      },
+      {
+        "title": "Estourou com 'Pipoco'",
+        "content": "A música 'Pipoco', em parceria com Melody e DJ Chris no Beat, foi um divisor de águas na carreira de Ana Castela, alcançando milhões de visualizações e se tornando um dos hits virais do Brasil em 2022.",
+        "imageSrc": "/images/Musica-Pipoco.jpg",
+        "imageAlt": "Capa do single Pipoco"
+      },
+      {
+        "title": "Rainha do AgroPop",
+        "content": "Ana Castela é conhecida como a 'Boiadeira' e uma das principais representantes do gênero AgroPop, que mistura sertanejo com elementos pop e eletrônicos, conquistando um novo público jovem.",
+        "imageSrc": "/images/Ana-Castela-rosto.png",
+        "imageAlt": "Ana Castela vestida de boiadeira"
+      },
+      {
+        "title": "Conquistou o Brasil adolescente",
+        "content": "Boa parte do público de Ana Castela é formado por adolescentes, que se identificam com sua autenticidade, simpatia e presença forte nas redes sociais, onde compartilha seu dia a dia de forma bem-humorada.",
+        "imageSrc": "/images/Ana-fans.png",
+        "imageAlt": "Ana tirando selfie com fãs"
+      },
+      {
+        "title": "Ganhadora de prêmios",
+        "content": "Mesmo com pouco tempo de carreira, Ana Castela já venceu prêmios importantes da música brasileira, como o TikTok Awards e o Prêmio Multishow, consolidando seu nome como um dos grandes destaques da nova geração.",
+        "imageSrc": "/images/Ana-Caste-premiação.png",
+        "imageAlt": "Ana Castela segurando troféu de premiação"
+      },
+      {
+        "title": "Participações especiais",
+        "content": "Ana Castela já colaborou com diversos artistas renomados, como Luan Pereira, Simone Mendes e Gustavo Mioto, mostrando sua versatilidade e força no cenário musical atual.",
+        "imageSrc": "/images/Ana-Gustavo.png",
+        "imageAlt": "Ana Castela no palco com outros artistas"
+      }
+    ]
+  },
+  "postGrid2": {
+    "title": "Últimos Posts",
+    "posts": [
+      {
+        "id": "1",
+        "title": "Ana Castela vence Melhor Álbum de Música Sertaneja em 2024 com \"Boiadeira Internacional\"",
+        "slug": "ana-castela-ganha-premio-melhor-album-sertanejo-2024",
+        "excerpt": "O álbum \"Boiadeira Internacional\" consagrou Ana Castela com prêmios no Prêmio de Música Brasileira e no Grammy Latino.",
+        "content": "Ana Castela conquistou o título de Melhor Álbum de Música Sertaneja em 2024 com seu trabalho \"Boiadeira Internacional (Ao Vivo)\", marcando sua estreia ao vivo com grande sucesso. O álbum, lançado em fevereiro de 2024 pela AgroPlay, foi gravado durante a Fespop, um dos maiores festivais da tríplice fronteira (Brasil, Argentina e Paraguai), reunindo mais de 70 mil pessoas. Com participações de grandes nomes como Simone Mendes, Matheus & Kauan, Gustavo Mioto, Alok, Hungria Hip Hop e Luan Pereira, o disco se destacou não só comercialmente, mas também criticamente, vencendo o Prêmio de Música Brasileira na categoria Lançamento - Sertanejo e o Grammy Latino de Melhor Álbum de Música Sertaneja.",
+        "imageUrl": "/images/Boiadeira.png",
+        "category": "Melhor Álbum Sertanejo 2024",
+        "date": "17 de Maio, 2024",
+        "readTime": 4,
+        "url": "https://www.cnnbrasil.com.br/entretenimento/grammy-latino-ana-castela-chora-ao-receber-premio-2-dias-antes-de-fazer-21-anos/#:~:text=A%20cantora%20Ana%20Castela%2C%2020,foi%20entregue%20por%20Gloria%20Groove."
+      },
+      {
+        "id": "2",
+        "title": "Ana Castela é coroada Revelação do Ano no Prêmio Multishow 2022",
+        "slug": "ana-castela-revelacao-ano-premio-multishow-2022",
+        "excerpt": "A cantora Ana Castela venceu a categoria Revelação do Ano no Prêmio Multishow 2022, consolidando seu lugar no cenário sertanejo.",
+        "content": "No Prêmio Multishow de Música Brasileira 2022, Ana Castela levou o troféu de **Revelação do Ano**, superando grandes nomes como Bala Desejo, Jovem Dionísio, Mari Fernandez, Nattanzinho, Rachel Reis, Tasha & Tracie e Urias. A vitória marcou um momento decisivo em sua carreira, reconhecendo seu talento e o impacto de suas músicas no cenário sertanejo. Com hits como \"Pipoco\" e uma presença de palco energética, Ana Castela provou que veio para ficar, conquistando não apenas o público, mas também a crítica especializada. Sua ascensão meteórica no mundo da música brasileira só confirmou o que seus fãs já sabiam: ela era a grande revelação do ano.",
+        "imageUrl": "/images/MultShowPremio.png",
+        "category": "Revelação 2022",
+        "date": "25 de Outubro, 2022",
+        "readTime": 3,
+        "url": "https://gshow.globo.com/cultura-pop/noticia/premio-multishow-2022-veja-a-lista-completa-dos-vencedores-da-premiacao.ghtml"
+      },
+      {
+        "id": "3",
+        "title": "Ana Castela arrasa em turnê nacional com lotação esgotada e shows históricos",
+        "slug": "ana-castela-turnê-nacional-2024",
+        "excerpt": "Ana Castela percorre o Brasil com sua turnê, levando o sertanejo universitário a novos patamares e esgotando ingressos em várias cidades.",
+        "content": "Ana Castela está vivendo um momento único em sua carreira com sua mais recente turnê, que percorre os principais palcos do Brasil. Depois do sucesso do álbum \"Boiadeira Internacional\" e de prêmios como o Grammy Latino e o Multishow, a cantora embarcou em uma série de shows que já se tornaram eventos imperdíveis para os fãs do sertanejo. Com produções grandiosas, coreografias marcantes e participações especiais de artistas como Gustavo Mioto e Luan Pereira, Ana Castela tem levado multidões ao delírio. Cidades como São Paulo, Rio de Janeiro, Curitiba e Goiânia registraram ingressos esgotados semanas antes dos eventos, comprovando o fenômeno que ela se tornou. Além disso, a turnê incluiu performances em grandes festivais, como o \"Festeja\" e o \"AgroPlay Music\", consolidando seu nome como uma das maiores atrações do gênero atualmente.",
+        "imageUrl": "/images/Turne.png",
+        "category": "Agenda de Shows",
+        "date": "10 de Junho, 2024",
+        "readTime": 4,
+        "url": "https://g1.globo.com/sp/ribeirao-preto-franca/festa-do-peao-de-barretos/2024/noticia/2024/08/18/um-ano-apos-choro-na-estreia-ana-castela-volta-ao-palco-principal-de-barretos-e-encanta-arena-lotada-de-adultos-e-criancas.ghtml"
+      }
+    ]
+  }
+}
