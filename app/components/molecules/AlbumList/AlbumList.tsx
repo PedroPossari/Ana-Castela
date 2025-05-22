@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import { AlbumListProps } from "../../types";
-import { useFavorites } from "../../context/FavoritesContext";
+import { AlbumListProps } from "../../../types";
+import { useFavorites } from "../../../context/FavoritesContext";
 
 export const AlbumList = ({ albums }: AlbumListProps) => {
   const { favorites, toggleFavorite } = useFavorites();

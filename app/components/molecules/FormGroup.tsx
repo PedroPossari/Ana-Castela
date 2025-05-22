@@ -1,5 +1,5 @@
 import React from 'react';
-import { Label, ErrorMessage } from '../atoms/FormControls';
+import { Label, ErrorMessage } from '../atoms/FormControls/FormControls';
 
 interface FormGroupProps {
   label?: string;

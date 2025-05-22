@@ -1,6 +1,6 @@
 // components/molecules/Card.tsx
 import { Text } from "../atoms/Text";
-import { Media } from "../atoms/Media";
+import { Media } from "../Midia/Midia";
 import { ContentCardProps } from "../../types";
 
 export const Card = ({

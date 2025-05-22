@@ -1,10 +1,10 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { AlbumList } from "../molecules/AlbumList";
-import { MainContent } from "../organisms/MainContent";
+import { AlbumList } from "../../molecules/AlbumList/AlbumList";
+import { MainContent } from "../MainContent";
 
-import type { AlbumListProps } from "../../types"; // ajuste o caminho do import
+import type { AlbumListProps } from "../../../types"; // ajuste o caminho do import
 
 export function AlbumsClient({ albums }: AlbumListProps) {
   const { t } = useTranslation();

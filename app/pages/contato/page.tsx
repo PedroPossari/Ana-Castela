@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { UserForm } from "../../components/organisms/UserForm";
+import { UserForm } from "../../components/organisms/UserForm/UserForm";
 import { MainContent } from "@/app/components/organisms/MainContent";
 import { UserFormData } from "../../hooks/schema";
 

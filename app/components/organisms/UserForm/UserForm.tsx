@@ -3,10 +3,10 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslation } from 'react-i18next';
 
-import { userFormSchema, UserFormData } from '../../hooks/schema';
-import { FormGroup } from '../molecules/FormGroup';
-import { Input, Textarea, Checkbox, Radio } from '../atoms/FormControls';
-import { Button } from '../atoms/FormButton';
+import { userFormSchema, UserFormData } from '../../../hooks/schema';
+import { FormGroup } from '../../molecules/FormGroup';
+import { Input, Textarea, Checkbox, Radio } from '../../atoms/FormControls/FormControls';
+import { Button } from '../../atoms/FormButton';
 
 interface UserFormProps {
   onSubmit: (data: UserFormData) => void;
