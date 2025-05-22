@@ -4,11 +4,9 @@ import { useTranslation } from "react-i18next";
 import { AlbumList } from "../molecules/AlbumList";
 import { MainContent } from "../organisms/MainContent";
 
-type AlbumsClientProps = {
-  albums: any[]; 
-};
+import type { AlbumListProps } from "../../types"; // ajuste o caminho do import
 
-export function AlbumsClient({ albums }: AlbumsClientProps) {
+export function AlbumsClient({ albums }: AlbumListProps) {
   const { t } = useTranslation();
 
   return (
