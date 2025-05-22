@@ -172,6 +172,7 @@
           "url": "https://g1.globo.com/sp/ribeirao-preto-franca/festa-do-peao-de-barretos/2024/noticia/2024/08/18/um-ano-apos-choro-na-estreia-ana-castela-volta-ao-palco-principal-de-barretos-e-encanta-arena-lotada-de-adultos-e-criancas.ghtml"
         }
       ]
-    }
+    },
+    "card": { "curiosityLabel": "Curiosity #{{index}}" }
   }
   
